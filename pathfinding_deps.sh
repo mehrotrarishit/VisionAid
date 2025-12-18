@@ -14,6 +14,12 @@ echo "[INFO] Starting dependency installation..."
 
 pip install yacs
 
+git clone https://github.com/apple/ml-depth-pro.git .
+
+pip install -e .
+
+source get_pretrained_models.sh
+
 # Clone the repo directly into the current directory
 git clone https://github.com/CSAILVision/semantic-segmentation-pytorch.git .
 
